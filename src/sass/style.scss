@@ -14,6 +14,7 @@
 		flex-wrap: wrap;
 		gap: 25px;
 		margin-top: 45px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -43,9 +44,9 @@
 }
 
 .clock {
+	text-align: center;
 	font-family: Roboto;
-	font-size: 161.6px;
-	line-height: 253px;
+	font-size: 118px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
