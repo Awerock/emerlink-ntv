@@ -16,6 +16,14 @@
 		margin-top: 45px;
 		margin-bottom: 40px;
 	}
+	&__title {
+		text-align: center;
+		font-family: Roboto;
+		font-size: 25px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
 }
 
 .logo {
@@ -44,10 +52,35 @@
 }
 
 .clock {
+	display: block;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 118px;
 	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.divider {
+	display: block;
+	max-width: 483px;
+	border-radius: 14px;
+	background-color: #ffffff;
+	font-family: Roboto;
+	font-size: 20.2px;
+	padding: 6px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #040d1f;
+}
+
+.name-tittle {
+	margin-top: 25px;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 300;
 	text-transform: uppercase;
 	color: #ffffff;
 }
