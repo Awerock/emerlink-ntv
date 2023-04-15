@@ -1,28 +1,25 @@
-html {
-	min-width: 590px;
-}
 .container {
-	max-width: 590px;
+	max-width: 340px;
 	margin: 0 auto;
-	padding: 53px;
+	padding: 25px;
 	box-sizing: border-box;
 }
 
 .main {
 	background-image: linear-gradient(247.0deg, #0e1b33 -8%, #020b1c 108%);
-	height: 1030px;
+	min-height: 844px;
 	&__block {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		gap: 25px;
-		margin-top: 45px;
-		margin-bottom: 40px;
+		gap: 14px;
+		margin-top: 30px;
+		margin-bottom: 20px;
 	}
 	&__title {
 		text-align: center;
 		font-family: Roboto;
-		font-size: 25px;
+		font-size: 14.8px;
 		font-weight: 300;
 		text-transform: uppercase;
 		color: #ffffff;
@@ -31,21 +28,39 @@ html {
 
 .logo {
 	display: block;
-	max-width: 452px;
+	max-width: 250px;
 	margin: 0 auto;
 }
 
+.player {
+	display: none;
+}
+
+.main.card_active .player {
+	display: block;
+	margin: 0 auto;
+	max-width: 286px;
+	margin-top: 25px;
+}
+
+
+
 .card {
-	width: 229px;
-	height: 229px;
-	background-color: #b8cde8;;
-	box-shadow: 3px 4px 9px 1px rgba(0,0,0,0.85);
-	border-radius: 20px;
+	width: 136px;
+	height: 136px;
+	background-color: #b8cde8;
+	box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.85);
+	border-radius: 11.9px;
 	position: relative;
+	&_active {
+		background-color: #ff6000;
+	}
 	&:active {
 		background-color: #cddbec;;
 	}
 	&__logo {
+		width: 87px;
+		height: 87px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -58,7 +73,7 @@ html {
 	display: block;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 118px;
+	font-size: 70px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -70,20 +85,24 @@ html {
 	border-radius: 14px;
 	background-color: #ffffff;
 	font-family: Roboto;
-	font-size: 20.2px;
-	padding: 6px;
+	font-size: 12px;
+	padding: 2px;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #040d1f;
 }
 
-.name-tittle {
-	margin-top: 25px;
-	text-align: center;
-	font-family: Roboto;
-	font-size: 14px;
-	line-height: 22px;
-	font-weight: 300;
-	text-transform: uppercase;
-	color: #ffffff;
+
+.name {
+	margin: 0 auto;
+	width: fit-content;
+	&__tittle {
+		margin-top: 25px;
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
 }
