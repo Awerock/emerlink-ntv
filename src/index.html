@@ -12,29 +12,31 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="main">
+    <section class="main card_active">
         <div class="container">
             <img src="img/logo_emer.png" alt="" class="logo">
             <iframe class="player" src="https://rutube.ru/play/embed/6790928c5b1d07e50b71df24957c29ad" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
             <div class="main__block">
-                <div class="card" id="on-of">
-                    <img src="icons/on.png" alt="" class="card__logo">
-                </div>
-                <a href="tutorial.html" class="card">
-                    <img src="icons/study.png" alt="" class="card__logo">
-                </a>
-                <div class="card">
-                    <img src="icons/work.png" alt="" class="card__logo">
-                </div>
-                <div class="card">
-                    <img src="icons/phone.png" alt="" class="card__logo">
-                </div>
+                <button class="card card_active" id="on-of">
+                    <div class="card__logo card__logo_1"></div>
+                </button>
+                <a href="tutorial.html"><button class="card">
+                    <div class="card__logo card__logo_2"></div>
+                </button></a>
+                <button class="card">
+                    <div class="card__logo card__logo_3"></div>
+                </button>
+                <button class="card">
+                    <div class="card__logo card__logo_4"></div>
+                </button>
             </div>
             <span class="clock" id="clock"></span>
             <h1 class="main__title">Комплемент дня</h1>
             <marquee behavior="scroll" direction="left" class="divider">ты лапочка</marquee>
-            <div class="name"><h2 class="name__tittle">create by eugene chi</h2></div>
         </div>
     </section>
+    <footer>
+        <div class="name"><h2 class="name__tittle">create by eugene chi</h2></div>
+    </footer>
 </body>
 </html>
