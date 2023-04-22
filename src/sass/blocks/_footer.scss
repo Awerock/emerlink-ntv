@@ -1,0 +1,17 @@
+footer {
+	min-height: 27px;
+	background-color: #1b1e26;
+    padding: 10px;
+}
+.name {
+	margin: 0 auto;
+	width: fit-content;
+	&__tittle {
+		font-family: Roboto;
+        font-size: 8.3px;
+        line-height: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #ffffff;
+	}
+}

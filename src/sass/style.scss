@@ -1,9 +1,13 @@
 .container {
 	max-width: 340px;
 	margin: 0 auto;
-	padding: 25px;
+	padding: 0 25px;
 	box-sizing: border-box;
 }
 
+@import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/pop-up';
+@import 'blocks/second';
 @import 'blocks/tutorial';
+@import 'blocks/footer';

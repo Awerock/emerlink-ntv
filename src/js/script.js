@@ -19,12 +19,14 @@ setInterval(function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("on-of").addEventListener("click", function() {
-        if (!document.querySelector(".main").classList.contains("card_active")) {
-            document.querySelector(".main").classList.add("card_active");
+        if (!document.querySelector(".main").classList.contains("active")) {
+            document.querySelector(".main").classList.add("active");
             document.getElementById("on-of").classList.add("card_active");
+            document.querySelector(".card__logo").src = "../icons/on.png";
         } else {
-            document.querySelector(".main").classList.remove("card_active");
+            document.querySelector(".main").classList.remove("active");
             document.getElementById("on-of").classList.remove("card_active");
+            document.querySelector(".card__logo").src = "../icons/on_gray.png";
         }
     });
 })
