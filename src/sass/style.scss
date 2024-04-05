@@ -1,53 +1,13 @@
 .container {
-	max-width: 590px;
+	max-width: 340px;
 	margin: 0 auto;
-	padding: 53px;
+	padding: 0 25px;
 	box-sizing: border-box;
 }
 
-.main {
-	background-image: linear-gradient(247.0deg, #0e1b33 -8%, #020b1c 108%);
-	height: 1030px;
-	&__block {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		gap: 25px;
-		margin-top: 45px;
-		margin-bottom: 40px;
-	}
-}
-
-.logo {
-	display: block;
-	max-width: 452px;
-	margin: 0 auto;
-}
-
-.card {
-	width: 229px;
-	height: 229px;
-	background-color: #b8cde8;;
-	box-shadow: 3px 4px 9px 1px rgba(0,0,0,0.85);
-	border-radius: 20px;
-	position: relative;
-	&:active {
-		background-color: #cddbec;;
-	}
-	&__logo {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: 1;
-		transform: translate(-50%, -50%);
-	}
-}
-
-.clock {
-	text-align: center;
-	font-family: Roboto;
-	font-size: 118px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #ffffff;
-}
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/pop-up';
+@import 'blocks/second';
+@import 'blocks/tutorial';
+@import 'blocks/footer';

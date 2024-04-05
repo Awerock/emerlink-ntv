@@ -12,30 +12,80 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="main">
+    <header class="header">
         <div class="container">
-            <img src="img/logo_emer.png" alt="" class="logo">
+            <img src="img/spt_logo.png" alt="" class="header__logo">
+        </div>
+    </header>
+    <section class="main active">
+        <div class="container">
+            <div class="player__box">
+                <iframe class="player" src="https://rutube.ru/play/embed/6790928c5b1d07e50b71df24957c29ad" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
             <div class="main__block">
-                <div class="card">
-                    <img src="icons/on.png" alt="" class="card__logo">
-                </div>
-                <div class="card">
-                    <img src="icons/study.png" alt="" class="card__logo">
-                </div>
-                <div class="card">
-                    <img src="icons/work.png" alt="" class="card__logo">
-                </div>
-                <div class="card">
-                    <img src="icons/phone.png" alt="" class="card__logo">
+                <button class="card card_active" id="on-of">
+                    <img src="icons/on.png" class="card__logo">
+                    <div class="card__text">ЭФИР</div>
+                </button>
+                <a href="tutorial.html">
+                    <button class="card">
+                        <img src="icons/study_gray.png" class="card__logo">
+                        <div class="card__text">инструкции</div>
+                    </button>
+                </a>
+                <button class="card">
+                    <img src="icons/work_gray.png" class="card__logo">
+                    <div class="card__text">график</div>
+                </button>
+                <button class="card" id="pop-up_open">
+                    <img src="icons/phone_gray.png" class="card__logo">
+                    <div class="card__text">телефоны</div>
+                </button>
+                <div class="pop-up" id="pop-up">
+                    <div class="pop-up__container">
+                        <div class="pop-up__body">
+                            <div class="pop-up__close" id="pop-up_close">&#x2716</div>
+                            <p class="title title_dark">Phones</p>
+                            <div class="phones">
+                                <div class="phones__item">
+                                    <span class="phones__name">техническая координация:</span>
+                                    <span class="phones__number">8(495)725-53-18</span>
+                                </div>
+                                <div class="phones__item">
+                                    <span class="phones__name">АНТВ - 2 (FTP перегоны):</span>
+                                    <span class="phones__number">8(495)725-54-59 </span>
+                                </div>
+                                <div class="phones__item">
+                                    <span class="phones__name">АСБ- 18:</span>
+                                    <span class="phones__number">8(495)617-90-30 </span>
+                                </div>
+                                <div class="phones__item">
+                                    <span class="phones__name">АСБ- 12:</span>
+                                    <span class="phones__number">8(495)617-74-64 </span>
+                                </div>
+                                <div class="phones__item">
+                                    <span class="phones__name">ТЕХ. ПОДДЕРЖКА</span>
+                                    <span class="phones__number">8(495)685-17-87</span>
+                                    <span class="phones__number">8(903)218-97-20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <span class="clock" id="clock"></span>
-            <h1 class="main__title">Комплемент дня</h1>
-            <div class="divider">
-                <span class="divider__text">ты лапочка</span>
-            </div>
-            <h2 class="name-tittle">create by eugene chi</h2>
         </div>
     </section>
+    <section class="second">
+        <div class="container">
+            <span class="clock" id="clock"></span>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="name">
+                <h2 class="name__tittle">create by eugene chi</h2>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
